@@ -1,0 +1,26 @@
+version: '3.2'
+services:
+  node:
+    container_name: webapp
+    # ホスト名を明示的に指定する
+    hostname: localhost
+    build:
+      context: .
+      dockerfile: ./amd/Dockerfile
+      args:
+        USER_ID: 1000
+        USER_NAME: vscode
+        GROUP_ID: 1000
+        GROUP_NAME: vscode
+    env_file: devcontainer.env
+    environment:
+      - TZ=JST-9
+    ports:
+      - 80:80
+      - 3000:3000
+      - 6006:6006
+    volumes:
+      - ~/.aws:/home/vscode/.aws
+      - ~/.ssh:/home/vscode/.ssh
+      - ~/.vscode/extensions/thunder-client:/home/vscode/thunder-client
+    command: /bin/sh -c "while sleep 1000; do :; done"
