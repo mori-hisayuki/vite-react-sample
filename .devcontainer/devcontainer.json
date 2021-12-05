@@ -26,6 +26,7 @@
 		"streetsidesoftware.code-spell-checker",
 		"ritwickdey.liveserver",
 		"ms-vsliveshare.vsliveshare",
+		"EditorConfig.EditorConfig"
 	],
 	"remoteUser": "vscode"
 }
