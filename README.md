@@ -6,8 +6,10 @@
 |  |--devcontainer.json
 |  |--docker-compose.yml
 |  |--amd
-|  |  |--Dockerfile
+|     |--Dockerfile
+|--.WebApp // アプリケーション本体
 |--.gitignore
+|--.editorconfig
 |--README.md
 ```
 
