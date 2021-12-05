@@ -1,37 +1,21 @@
-# 使用方法
-
-実際に使っているときのディレクトリ構造
+# ディレクトリ構造
 
 ```
-|--.devcontainer
-|  |--aws
-|  |  |--config
-|  |  |--credentials
+|--.devcontainer // remote containerの設定
 |  |--devcontainer.env
 |  |--devcontainer.json
 |  |--docker-compose.yml
-|  |--node
+|  |--amd
 |  |  |--Dockerfile
-|  |--ssh
-|  |  |--config
-|  |  |--github
-|  |  |--github.pub
-|  |  |--known_hosts
 |--.gitignore
 |--README.md
 ```
 
 ## awsへの接続
-AWSへ接続する際の`config`と`credentials`を追加する
+ローカル環境の`~/.aws`ディレクトリをマウントしているため、接続先情報はローカルに依存する
 
 ## Githubへの接続
-Githubへ接続する際のSSHキー`***`と`***.pub`を追加する
-キーは`ssh-keygen`コマンドで作成
-作成したkeyでの接続情報をknown_hostsに追加する
-
-```
-ssh-keyscan github.com >> ~/.ssh/known_hosts
-```
+AWS同様に`~/.ssh`ディレクトリをマウントしているため、接続先情報はローカルに依存する
 
 接続情報が追加されたknown_hostsをsshディレクトリに追加する
 
