@@ -76,6 +76,9 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 # install yarn
 RUN npm install -g yarn
 
+# install amplify cli
+RUN npm install -g @aws-amplify/cli
+
 RUN set -x \
     && yarn global add \
     create-react-app \
