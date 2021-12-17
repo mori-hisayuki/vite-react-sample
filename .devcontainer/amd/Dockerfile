@@ -76,14 +76,13 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 # install yarn
 RUN npm install -g yarn
 
-# install amplify cli
-RUN npm install -g @aws-amplify/cli
-
+# grobale add
 RUN set -x \
     && yarn global add \
     create-react-app \
     @storybook/cli \
-    vercel
+    vercel \
+    @aws-amplify/cli@latest
 
 USER ${USER_NAME}
 
