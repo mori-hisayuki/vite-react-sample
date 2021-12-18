@@ -1,5 +1,7 @@
 # top-most EditorConfig file
 root = true
+editor.defaultFormatter = esbenp.prettier-vscode
+editor.formatOnSave = true
 
 [*]
 indent_style = space

@@ -3,15 +3,21 @@ env:
   es2021: true
   node: true
 extends:
-  - 'plugin:react/recommended'
-  - airbnb
-parser: '@typescript-eslint/parser'
+  - plugin:react/recommended
+  - airbnb # Airbnb のスタイルガイドに従事
+  - airbnb-typescript # Airbnbのtypescript用拡張
+  - airbnb/hooks # ReactHook用
+  - prettier # Prettier用
+parser: "@typescript-eslint/parser"
 parserOptions:
+  project: ./tsconfig.json #
   ecmaFeatures:
     jsx: true
-  ecmaVersion: 12
+  ecmaVersion: 13
   sourceType: module
 plugins:
   - react
-  - '@typescript-eslint'
-rules: {}
+  - "@typescript-eslint"
+rules:
+  react/react-in-jsx-scope: off
+  singleQuote: false
