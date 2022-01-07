@@ -21,7 +21,7 @@ services:
       - 6006:6006
     volumes:
       # ソースコードとdevcontainerを一緒に管理する場合は明示的にマウント先を指定
-      - ..:/home/vscode/develop:cached
+      - ../webapp:/home/vscode/develop:cached
       - ~/.aws:/home/vscode/.aws
       - ~/.ssh:/home/vscode/.ssh
       - ~/.vscode/extensions/thunder-client:/home/vscode/thunder-client
