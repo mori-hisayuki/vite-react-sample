@@ -22,4 +22,5 @@ settings:
   react:
     version: detect
 rules:
-  react/react-in-jsx-scope: off
+  react/react-in-jsx-scope: off # Reactをimportしていなくてもエラーにならないようにする
+  react/no-unescaped-entities: off # 記号をエスケースプしなくてよくする

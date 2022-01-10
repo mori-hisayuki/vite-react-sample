@@ -4,7 +4,7 @@ import { Header } from './Header'
 import './page.css'
 
 interface PageProps {
-  user?: {}
+  user?: { name: string }
   onLogin: () => void
   onLogout: () => void
   onCreateAccount: () => void
