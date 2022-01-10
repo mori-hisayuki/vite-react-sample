@@ -1,4 +1,4 @@
-version: '3.2'
+version: "3.2"
 services:
   react_on_nodejs:
     container_name: webapp
@@ -19,6 +19,7 @@ services:
       - 80:80
       - 3000:3000
       - 6006:6006
+      - 5000:5000
     volumes:
       # ソースコードとdevcontainerを一緒に管理する場合は明示的にマウント先を指定
       - ..:/home/vscode/develop:cached
