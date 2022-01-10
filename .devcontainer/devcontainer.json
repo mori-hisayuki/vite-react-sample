@@ -1,27 +1,27 @@
 {
-	"name": "React on VSCode",
-	"dockerComposeFile": "./docker-compose.yml",
-	"service": "react_on_nodejs",
-	// workspaceを明示的に指定
-	"workspaceFolder": "/home/vscode/develop",
-	// remotecontainer内でのextension
-	"extensions": [
-		"vscodevim.vim",
-		"formulahendry.auto-rename-tag",
-		"mhutchie.git-graph",
-		"vscode-icons-team.vscode-icons",
-		"dbaeumer.vscode-eslint",
-		"vector-of-bool.gitflow",
-		"oderwat.indent-rainbow",
-		"firsttris.vscode-jest-runner",
-		"ionutvmi.path-autocomplete",
-		"christian-kohler.path-intellisense",
-		"esbenp.prettier-vscode",
-		"tabnine.tabnine-vscode",
-		"streetsidesoftware.code-spell-checker",
-		"ritwickdey.liveserver",
-		"ms-vsliveshare.vsliveshare",
-		"EditorConfig.EditorConfig"
-	],
-	"remoteUser": "vscode"
+  "name": "React on VSCode",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "react_on_nodejs",
+  // workspaceを明示的に指定
+  "workspaceFolder": "/home/vscode/develop",
+  // remotecontainer内でのextension
+  "extensions": [
+    "vscodevim.vim",
+    "formulahendry.auto-rename-tag",
+    "mhutchie.git-graph",
+    "vscode-icons-team.vscode-icons",
+    "dbaeumer.vscode-eslint",
+    "vector-of-bool.gitflow",
+    "oderwat.indent-rainbow",
+    "firsttris.vscode-jest-runner",
+    "ionutvmi.path-autocomplete",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "tabnine.tabnine-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "ritwickdey.liveserver",
+    "ms-vsliveshare.vsliveshare",
+    "EditorConfig.EditorConfig"
+  ],
+  "remoteUser": "vscode"
 }
